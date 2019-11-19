@@ -20,10 +20,10 @@ def play(songs)
   choice = gets.strip
   if choice.length == 1 
     if choice.to_i > 0 && choice.to_i < 10
-      puts "Playing <#{songs[choice.to_i - 1]}>"
+      puts "Playing #{songs[choice.to_i - 1]}"
     end
   elsif songs.include? choice 
-    puts "Playing <#{choice}>"
+    puts "Playing #{choice}"
   else
     puts "Invalid input, please try again"
   end
