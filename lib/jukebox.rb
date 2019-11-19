@@ -23,7 +23,7 @@ def play(songs)
       puts "Playing <#{songs[choice.to_i - 1]}>"
     end
   elsif songs.include? choice 
-    puts "Playing <#{choice}"
+    puts "Playing <#{choice}>"
   else
     puts "Invalid input, please try again"
   end
